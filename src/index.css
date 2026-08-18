@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Space Grotesk", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-mono: "IBM Plex Mono", monospace;
+}
+
+:root {
+  --bg: #0F1214;
+  --bg-elevated: #161B1E;
+  --surface: #1B2124;
+  --surface-hover: #212829;
+  --border: #2A3234;
+  --text: #EDF2F1;
+  --text-dim: #8D9B98;
+  --text-faint: #576362;
+  --accent: #2FD1B8;
+  --accent-dim: #1E6E63;
+  --success: #8BD450;
+  --warning: #FF9A44;
+  --danger: #FF5C6C;
+}
+
+html.light {
+  --bg: #F7F9F8;
+  --bg-elevated: #FFFFFF;
+  --surface: #FFFFFF;
+  --surface-hover: #EFF3F2;
+  --border: #DFE6E4;
+  --text: #101413;
+  --text-dim: #5B6462;
+  --text-faint: #96A19E;
+  --accent: #0E9C87;
+  --accent-dim: #B9E9E2;
+  --success: #4B8F1E;
+  --warning: #C96A1B;
+  --danger: #D33E4E;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+::selection {
+  background: var(--accent);
+  color: var(--bg);
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
