@@ -3,6 +3,7 @@ Every deploy, one timeline you can trust.
 A premium home-page concept for a deploy/release-observability product, built for the "Build It
 Like You Mean It" frontend challenge. The goal wasn't just centering a div — it was a page
 someone would actually want an account for within three seconds of landing.
+
 🔗 Live demo: https://tranquil-brioche-1e5b0f.netlify.app
 📦 Repo: https://github.com/JyotiGupta-alt/waypoint-home-page
 📝 Design decisions: DECISIONS.md
